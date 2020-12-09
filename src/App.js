@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
 function App() {
+  if (typeof window === 'undefined') {
+    return (
+      <div id="your-comp-id-server">
+        <div id="child-id-server">server</div>
+      </div>
+    )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="your-comp-id-client">
+      <div id="child-id-client">client</div>
     </div>
-  );
+  )
 }
 
 export default App;
