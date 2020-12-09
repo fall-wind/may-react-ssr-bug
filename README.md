@@ -1,3 +1,3 @@
 `yarn` 
 
-`yarn start`
+`yarn run dev`
